@@ -222,6 +222,8 @@
 		9AF0EA761D9A7FF700F27DDF /* NSObject+BindingTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AF0EA741D9A7FF700F27DDF /* NSObject+BindingTarget.swift */; };
 		9AF0EA771D9A7FF700F27DDF /* NSObject+BindingTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AF0EA741D9A7FF700F27DDF /* NSObject+BindingTarget.swift */; };
 		9AF0EA781D9A7FF700F27DDF /* NSObject+BindingTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AF0EA741D9A7FF700F27DDF /* NSObject+BindingTarget.swift */; };
+		A9A533C11EACD5B600F34FB9 /* UNUserNotificationCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A533C01EACD5B600F34FB9 /* UNUserNotificationCenter.swift */; };
+		A9A533C41EACD66400F34FB9 /* UNUserNotificationCenterSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A533C31EACD66400F34FB9 /* UNUserNotificationCenterSpec.swift */; };
 		A9B315C91B3940980001CB9C /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDC42E2E1AE7AB8B00965373 /* Result.framework */; };
 		A9B315CA1B3940AB0001CB9C /* ReactiveCocoa.h in Headers */ = {isa = PBXBuildFile; fileRef = D04725EF19E49ED7006002AA /* ReactiveCocoa.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A9EB3D201E94F08A002A9BCC /* UINavigationItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9EB3D1C1E94ECAC002A9BCC /* UINavigationItem.swift */; };
@@ -448,6 +450,8 @@
 		A97451341B3A935E00F48E55 /* watchOS-Base.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "watchOS-Base.xcconfig"; sourceTree = "<group>"; };
 		A97451351B3A935E00F48E55 /* watchOS-Framework.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "watchOS-Framework.xcconfig"; sourceTree = "<group>"; };
 		A97451361B3A935E00F48E55 /* watchOS-StaticLibrary.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "watchOS-StaticLibrary.xcconfig"; sourceTree = "<group>"; };
+		A9A533C01EACD5B600F34FB9 /* UNUserNotificationCenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UNUserNotificationCenter.swift; path = UserNotifications/UNUserNotificationCenter.swift; sourceTree = "<group>"; };
+		A9A533C31EACD66400F34FB9 /* UNUserNotificationCenterSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UNUserNotificationCenterSpec.swift; path = UserNotifications/UNUserNotificationCenterSpec.swift; sourceTree = "<group>"; };
 		A9B315541B3940610001CB9C /* ReactiveCocoa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ReactiveCocoa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9EB3D1C1E94ECAC002A9BCC /* UINavigationItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UINavigationItem.swift; sourceTree = "<group>"; };
 		A9EB3D1E1E94ED84002A9BCC /* UINavigationItemSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UINavigationItemSpec.swift; sourceTree = "<group>"; };
@@ -717,6 +721,22 @@
 			path = watchOS;
 			sourceTree = "<group>";
 		};
+		A9A533BF1EACD57B00F34FB9 /* UserNotifications */ = {
+			isa = PBXGroup;
+			children = (
+				A9A533C01EACD5B600F34FB9 /* UNUserNotificationCenter.swift */,
+			);
+			name = UserNotifications;
+			sourceTree = "<group>";
+		};
+		A9A533C21EACD5F200F34FB9 /* UserNotifications */ = {
+			isa = PBXGroup;
+			children = (
+				A9A533C31EACD66400F34FB9 /* UNUserNotificationCenterSpec.swift */,
+			);
+			name = UserNotifications;
+			sourceTree = "<group>";
+		};
 		BE330A0D1D634F1E00806963 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -798,6 +818,7 @@
 				9AA0BD771DDE03DE00531FCF /* ObjC+Runtime.swift */,
 				9A1D05E91D93E9F100ACF44C /* AppKit */,
 				9A1D05EB1D93E9F100ACF44C /* UIKit */,
+				A9A533BF1EACD57B00F34FB9 /* UserNotifications */,
 				538DCB761DCA5E1600332880 /* Shared */,
 				D04725ED19E49ED7006002AA /* Supporting Files */,
 				9AB15C791E26CD9A00997378 /* Deprecations+Removals.swift */,
@@ -823,6 +844,7 @@
 			children = (
 				9ADE4A8C1DA6D94C005C2AC8 /* AppKit */,
 				9A1D06231D93EA7E00ACF44C /* UIKit */,
+				A9A533C21EACD5F200F34FB9 /* UserNotifications */,
 				538DCB771DCA5E3200332880 /* Shared */,
 				9A9DFEE81DA7EFB60039EE1B /* AssociationSpec.swift */,
 				CD8401821CEE8ED7009F0ABF /* CocoaActionSpec.swift */,
@@ -1395,6 +1417,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A9EB3D201E94F08A002A9BCC /* UINavigationItem.swift in Sources */,
+				A9A533C11EACD5B600F34FB9 /* UNUserNotificationCenter.swift in Sources */,
 				A9EB3D841E955602002A9BCC /* UISelection​Feedback​Generator.swift in Sources */,
 				4ABEFE251DCFCF630066A8C2 /* UICollectionView.swift in Sources */,
 				9A1D06011D93EA0000ACF44C /* UIBarItem.swift in Sources */,
@@ -1468,6 +1491,7 @@
 				9A1D063A1D93EA7E00ACF44C /* UIButtonSpec.swift in Sources */,
 				9A1D064A1D93EA7E00ACF44C /* UISegmentedControlSpec.swift in Sources */,
 				9A24A8461DE142A500987AF9 /* SwizzlingSpec.swift in Sources */,
+				A9A533C41EACD66400F34FB9 /* UNUserNotificationCenterSpec.swift in Sources */,
 				9A1D063E1D93EA7E00ACF44C /* UIControl+EnableSendActionsForControlEvents.swift in Sources */,
 				4191394E1DBA01A00043C9D1 /* UIGestureRecognizerSpec.swift in Sources */,
 				9A892D901E8D19BE00EA35F3 /* DelegateProxySpec.swift in Sources */,
